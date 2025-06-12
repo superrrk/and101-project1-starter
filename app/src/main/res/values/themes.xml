@@ -2,15 +2,23 @@
     <!-- Base application theme. -->
     <style name="Theme.HelloSquirrel" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">#A4D2E6</item>
         <item name="colorPrimaryVariant">@color/white</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnPrimary">#3F51B5</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorSecondary">#7270B1</item>
+        <item name="colorSecondaryVariant">#C08ED1</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="CircularImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="strokeColor">#FFFFFF</item> <!-- white border -->
+        <item name="strokeWidth">3dp</item>
+    </style>
+
 </resources>

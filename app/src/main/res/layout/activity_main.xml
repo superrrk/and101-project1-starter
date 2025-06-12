@@ -11,27 +11,29 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
-        android:background="@color/card_foreground"
         android:elevation="20dp"
-        app:cardBackgroundColor="#F0C0C0"
+        app:cardBackgroundColor="?attr/colorPrimary"
         app:cardCornerRadius="25dp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="25dp">
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <ImageView
+            <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/profile_image"
-                android:layout_width="@dimen/profile_image_size"
-                android:layout_height="@dimen/profile_image_size"
-                android:layout_marginTop="76dp"
-                android:src="@drawable/avatar_9"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.496"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+                android:contentDescription="Profile image"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:shapeAppearanceOverlay="@style/CircularImageStyle" />
 
             <TextView
                 android:id="@+id/profile_name"
@@ -39,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="48dp"
                 android:textAllCaps="true"
-                android:textColor="@color/black"
+                android:textColor="?attr/colorOnPrimary"
                 android:textSize="24sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
